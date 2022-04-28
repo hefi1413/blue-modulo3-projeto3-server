@@ -23,9 +23,11 @@ var paletasController = {
     try {
       //let paletas = await Paletas.find({});
       //let paletas = Paletas.get();
+
       setTimeout(() => {
         message = '';
       }, 5000);
+
       res.send({ paletas: _paletas, message: message });
     } catch (err) {
       console.log(`Erro! ${err}`);
