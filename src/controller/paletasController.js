@@ -62,8 +62,8 @@ var paletasController = {
         message = '';
       }, 5000);
 
-      //res.render(fileName, { paletas: paletas, message: message });
-      res.send({ paletas: [paleta], message: message });
+      //res.send({ paletas: [paleta], message: message });
+      res.send(paleta);
     } catch (err) {
       message = `Erro! Não foi possível localizar a paleta.`;
       console.log('Erro ! ' + err.message);
