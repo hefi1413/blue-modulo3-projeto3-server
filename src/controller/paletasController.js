@@ -28,7 +28,8 @@ var paletasController = {
         message = '';
       }, 5000);
 
-      res.send({ paletas: _paletas, message: message });
+      //res.send({ paletas: _paletas, message: message });
+      res.send(_paletas);
     } catch (err) {
       console.log(`Erro! ${err}`);
       res.status(500).send('Não foi possível exibir os dados.');
